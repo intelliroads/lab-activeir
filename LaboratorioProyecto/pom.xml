@@ -1,0 +1,112 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>LaboratorioProyecto</groupId>
+	<artifactId>LaboratorioProyecto</artifactId>
+	<version>1.0</version>
+	<packaging>war</packaging>
+
+	<name>LaboratorioProyecto</name>
+
+	<properties>
+		<jsf-myfaces.version>2.1.11</jsf-myfaces.version>
+		<project.build.sourceEncoding>ISO-8859-1</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>ISO-8859-1</project.reporting.outputEncoding>
+		<version.jboss.spec.javaee.6.0>3.0.2.Final</version.jboss.spec.javaee.6.0>
+
+	</properties>
+
+	<build>
+		<finalName>LaboratorioProyecto</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.1</version>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>2.3</version>
+				<configuration>
+					<webXml>src\main\webapp\WEB-INF\web.xml</webXml>
+				</configuration>
+			</plugin>
+
+		</plugins>
+	</build>
+
+	<repositories>
+		<repository>
+			<id>prime-repo</id>
+			<name>PrimeFaces Maven Repository</name>
+			<url>http://repository.primefaces.org</url>
+			<layout>default</layout>
+		</repository>
+	</repositories>
+
+	<dependencyManagement>
+		<dependencies>
+			<!-- Define the version of JBoss' Java EE 6 APIs we want to import. Any 
+				dependencies from org.jboss.spec will have their version defined by this 
+				BOM -->
+			<!-- JBoss distributes a complete set of Java EE 6 APIs including a Bill 
+				of Materials (BOM). A BOM specifies the versions of a "stack" (or a collection) 
+				of artifacts. We use this here so that we always get the correct versions 
+				of artifacts. Here we use the jboss-javaee-6.0 stack (you can read this as 
+				the JBoss stack of the Java EE 6 APIs). You can actually use this stack with 
+				any version of JBoss AS that implements Java EE 6, not just JBoss AS 7! -->
+			<dependency>
+				<groupId>org.jboss.spec</groupId>
+				<artifactId>jboss-javaee-6.0</artifactId>
+				<version>${version.jboss.spec.javaee.6.0}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+
+		</dependencies>
+	</dependencyManagement>
+
+	<dependencies>
+
+
+		<!-- MY FACES -->
+		<dependency>
+			<groupId>org.apache.myfaces.core</groupId>
+			<artifactId>myfaces-api</artifactId>
+			<version>2.1.11</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.myfaces.core</groupId>
+			<artifactId>myfaces-impl</artifactId>
+			<version>2.1.11</version>
+		</dependency>
+		<!-- END MY FACES -->
+
+		<dependency>
+			<groupId>org.primefaces</groupId>
+			<artifactId>primefaces</artifactId>
+			<version>5.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>2.4</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>br.com.digilabs.jqplot</groupId>
+			<artifactId>jqplot4java</artifactId>
+			<version>1.2.2</version>
+		</dependency>
+	</dependencies>
+</project>

@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+<body>
+
+	<ui:composition template="templates/masterLayout.xhtml">
+
+		<ui:define name="contenido">
+
+			<h:form id="formPrincipal" styleClass="formPrincipal">
+
+				<h1>
+					<h:outputText id="output_error" value="#{Messages.OcurrioError}" />
+				</h1>
+
+				<div class="fieldcontain" style="margin-top: 10px">
+					<h2>
+						<LABEL style="color:red" > #{Messages.Error404} </LABEL>
+					</h2>
+				</div>
+
+			</h:form>
+
+		</ui:define>
+	</ui:composition>
+</body>
+</html>

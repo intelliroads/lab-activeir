@@ -1,0 +1,143 @@
+
+
+/*  ---------------------------- ORIGINALES REEMPLAZADOS ----------------------------------- */
+
+
+.ui-datatable-odd{
+ 	background: none repeat scroll 0 0 #F3F3F3; 
+}
+
+/* BOTONES HOVER*/
+.ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover{
+	border: 1px solid #b6c56c;
+	
+	background: #d4dc9b /* url("/integradoc.designer/javax.faces.resource/images/ui-bg_highlight-hard_80_85b2cb_1x100.png.xhtml?ln=primefaces-aristo") 50% 50% repeat-x */;
+	background: #d4dc9b linear-gradient(top, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0));
+	background: #d4dc9b -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.6)), to(rgba(255, 255, 255, 0)));
+	background: #d4dc9b -moz-linear-gradient(top, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0));
+	font-weight: bold;
+	color: #313131;
+	-moz-box-shadow: 0 0 5px #c7d381;
+	-webkit-box-shadow: 0px 0px 8px #c7d381;
+	box-shadow: 0px 0px 8px #c7d381;
+}
+
+
+
+/* BOTONES FOCUS*/
+.ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus{
+	border: 1px solid #9cba25;
+	background: #d4dc9b /* url("/integradoc.designer/javax.faces.resource/images/ui-bg_highlight-hard_80_85b2cb_1x100.png.xhtml?ln=primefaces-aristo") 50% 50% repeat-x */;
+	background: #d4dc9b linear-gradient(top, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0));
+	background: #d4dc9b -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.6)), to(rgba(255, 255, 255, 0)));
+	background: #d4dc9b -moz-linear-gradient(top, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0));
+	font-weight: bold;
+	color: #313131;
+	-moz-box-shadow: 0 0 5px #c7d381;
+	-webkit-box-shadow: 0px 0px 8px #c7d381;
+	box-shadow: 0px 0px 8px #c7d381;
+}
+
+
+/* BOTONES ACTIVO*/
+.ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active{
+	border: 1px solid #b6c56c;
+	background: #e4eac1 /* url("/integradoc.designer/javax.faces.resource/images/ui-bg_highlight-hard_80_85b2cb_1x100.png.xhtml?ln=primefaces-aristo") 50% 50% repeat-x */;
+	background: #e4eac1 linear-gradient(top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4));
+	background: #e4eac1 -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.4)));
+	background: #e4eac1 -moz-linear-gradient(top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4));
+	font-weight: bold;
+	color: #313131;
+	-moz-box-shadow: 0 0 5px #c7d381;
+	-webkit-box-shadow: 0px 0px 8px #c7d381;
+	box-shadow: 0px 0px 8px #c7d381;
+}
+
+.ui-widget-content .ui-inputfield.ui-state-focus {
+	border: 1px solid #778e1d;
+	background: #fff /* url("/integradoc.designer/javax.faces.resource/images/ui-bg_highlight-hard_80_85b2cb_1x100.png.xhtml?ln=primefaces-aristo") 50% 50% repeat-x */;
+	background: #fff linear-gradient(top, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0));
+	background: #fff -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.6)), to(rgba(255, 255, 255, 0)));
+	background: #fff -moz-linear-gradient(top, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0));
+	font-weight: bold;
+	color: #313131;
+	-moz-box-shadow: 0 0 5px #c7d381;
+	-webkit-box-shadow: 0px 0px 8px #c7d381;
+	box-shadow: 0px 0px 8px #c7d381;
+}
+
+/*  ---------------------------- ESTILOS IDOC ----------------------------------- */
+
+
+
+/* mini cuadritos de propiedades*/
+.subHeaderIdoc .ui-widget-header {
+	border: 1px solid #A8A8A8;		
+	background: #E4EAC1 /* url("/integradoc.designer/javax.faces.resource/images/ui-bg_inset-hard_65_85b2cb_1x100.png.xhtml?ln=primefaces-aristo") 50% 50% repeat-x*/;
+	background: #E4EAC1 linear-gradient(top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4));
+	background: #E4EAC1 -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.4)));
+	background: #E4EAC1 -moz-linear-gradient(top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4));
+	color: #333;
+	font-weight: bold;
+	text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.7);
+}
+
+/* accordion activo*/
+.accordionIdoc .ui-state-active  { /* , .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active  <-- esto para los botones de un popup*/
+	border: 1px solid #c7d381;
+	background: #d3dd9b /* url("/integradoc.designer/javax.faces.resource/images/ui-bg_inset-hard_65_85b2cb_1x100.png.xhtml?ln=primefaces-aristo") 50% 50% repeat-x */;
+	background: #d3dd9b linear-gradient(top, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0));
+	background: #d3dd9b -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.6)), to(rgba(255, 255, 255, 0)));
+	background: #d3dd9b -moz-linear-gradient(top, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0));
+	font-weight: bold;
+	color: #1C4257;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7);
+	-moz-box-shadow: 0 0 5px  #c7d381;
+	-webkit-box-shadow: 0px 0px 8px #c7d381;
+	box-shadow: 0 0 8px #c7d381;
+}
+
+/* accordion over*/
+.accordionIdoc .ui-state-hover   /*, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus */ {
+	border: 0.89px solid #c7d381;
+	background: #d3dd9b /* url("/integradoc.designer/javax.faces.resource/images/ui-bg_highlight-hard_80_85b2cb_1x100.png.xhtml?ln=primefaces-aristo") 50% 50% repeat-x */;
+	background: #d3dd9b linear-gradient(top, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0));
+	background: #d3dd9b -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.6)), to(rgba(255, 255, 255, 0)));
+	background: #d3dd9b -moz-linear-gradient(top, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0));
+	font-weight: bold;
+	color: #313131;
+	-moz-box-shadow: 0 0 5px #c7d381;
+	-webkit-box-shadow: 0px 0px 8px #c7d381;
+	box-shadow: 0px 0px 8px  #c7d381;
+}
+
+
+
+/* inputs HOVER*/
+.inputIdoc .ui-state-hover{	
+	border: 1px solid #778e1d;
+	background: #fff /* url("/integradoc.designer/javax.faces.resource/images/ui-bg_highlight-hard_80_85b2cb_1x100.png.xhtml?ln=primefaces-aristo") 50% 50% repeat-x */;
+	background: #fff linear-gradient(top, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0));
+	background: #fff -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.6)), to(rgba(255, 255, 255, 0)));
+	background: #fff -moz-linear-gradient(top, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0));
+	font-weight: bold;
+	color: #313131;
+	-moz-box-shadow: 0 0 5px #c7d381;
+	-webkit-box-shadow: 0px 0px 8px #c7d381;
+	box-shadow: 0px 0px 8px #c7d381;
+}
+
+.ui-datatable-scrollable-body{
+	overflow:overlay;	
+}
+
+
+
+.ui-selectonemenu{
+	top:8px;
+	height: 25px;
+}
+
+.ui-selectonemenu .ui-selectonemenu-trigger{
+	height: 112.5%;
+}

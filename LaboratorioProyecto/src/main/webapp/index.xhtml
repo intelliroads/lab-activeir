@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+<body>
+
+	<ui:composition template="templates/masterLayout.xhtml">
+
+		<ui:define name="contenido">
+
+			<h:form id="formPrincipal" styleClass="formPrincipal">
+				<h1>#{Messages.Velocidades}</h1>
+
+				<div class="nav">
+					<ul>
+
+						<li><p:commandButton id="id_update" value="#{Messages.Refresh}"
+								actionListener="#{velocidadesBean.recargarModelo()}"
+								update="contenedorGrafica" /></li>
+					</ul>
+				</div>
+
+
+				<div style="margin-top: 40px">
+					<p:outputPanel id="contenedorGrafica">
+						<p:lineChart  showDatatip="false" value="#{velocidadesBean.modeloGrafica}" xaxisAngle="-70" animate="true" />
+						<br />
+						<p:dataTable id="tablaValores"
+							value="#{velocidadesBean.velocidades}" var="vel" paginator="true"
+							rows="20"
+							paginatorTemplate="{FirstPageLink} {PreviousPageLink} {CurrentPageReport} {NextPageLink} {LastPageLink}">
+
+							<p:column headerText="#{Messages.Fecha}" id="columnaFecha"
+								sortBy="#{vel.fecha}" styleClass="tableColumnStyle">
+								<h:outputText value="#{vel.fecha}">
+									<f:convertDateTime pattern="dd/MM/yyyy HH:mm:ss" />
+								</h:outputText>
+							</p:column>
+							<p:column headerText="#{Messages.Velocidad}"
+								id="columnaVelocidad" sortBy="#{vel.velocidad}"
+								styleClass="tableColumnStyle">
+								<h:outputText value="#{vel.velocidad}" />
+							</p:column>
+
+						</p:dataTable>
+					</p:outputPanel>
+				</div>
+			</h:form>
+		</ui:define>
+	</ui:composition>
+</body>
+</html>

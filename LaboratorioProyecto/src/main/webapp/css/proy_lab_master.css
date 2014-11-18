@@ -1,0 +1,748 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video
+	{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	/*font-family: Arial, Helvetica, sans-serif !important;
+	font-size: 12px !important;      */
+}
+
+::-webkit-scrollbar {
+	width: 12px;
+	height: 12px;
+}
+
+::-webkit-scrollbar-track {
+	background: whiteSmoke;
+	-webkit-box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+	background: #c5c5c5;
+	border-radius: 10px;
+	border: whiteSmoke solid 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #b5b5b5;
+}
+
+html.no-cssgradients {
+	background-color: #aaa;
+}
+
+.ie6 html {
+	height: 100%;
+}
+
+.ie6 body {
+	height: 100%;
+}
+
+.ie6 body,.ie7 body,.ie8 body {
+	border-color: #255b17;
+	border-style: solid;
+	border-width: 0 1px;
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section
+	{
+	display: block;
+}
+
+body {
+	line-height: 1;
+	overflow-x: hidden;
+	/* prevents box-shadow causing a horizontal scrollbar in firefox when viewport < 960px wide */
+}
+
+ol,ul {
+	list-style: none;
+}
+
+blockquote,q {
+	quotes: none;
+}
+
+blockquote:before,blockquote:after,q:before,q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+	margin-bottom: 1em;
+	max-width: 100%;
+	background-color: transparent;
+	font-size: 12px;
+}
+
+h1 {
+	color: #49597D;
+	font-weight: normal;
+	font-size: 25px;
+	margin: 0.8em 0 0.3em 0;
+}
+.contenedor_content h1 {
+	border-bottom: 1px solid #CCCCCC;
+	/*margin: 0.8em 1em 0.3em;*/
+	padding: 0 0.25em;
+}
+
+h2 {
+	color: #49597D;
+	font-weight: normal;
+	font-size: 16px;
+	margin: 0.8em 0 0.3em 0;
+}
+
+strong {
+	font-weight: bold;
+}
+
+input {
+	outline: none;
+}
+
+img {
+	border: 0;
+	max-width: 100%;
+}
+
+a {
+	text-decoration: none;
+	
+}
+
+#header{
+	text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff,
+		1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+
+
+a:hover {
+	text-decoration: underline;
+	text-shadow: none;
+}
+
+a:hover,a:active {
+	outline: none;
+	text-shadow: none;
+	/* prevents outline in webkit on active links but retains it for tab focus */
+}
+
+body {
+	font: 13px/20px "Lucida Grande", Tahoma, Verdana, sans-serif;
+	color: #404040;
+}
+
+#container1 {
+	float: left;
+	width: 100%;
+	border: none;
+}
+
+#columna1 {
+	float: left;
+	padding-top: 30px;
+	padding-right: 1%;
+	width: 49%
+}
+
+#columna2 {
+	float: left;
+	padding-left: 1%;
+	width: 49%
+}
+
+.datalist-noborder .ui-widget-content {
+	border: none;
+	background: transparent;
+}
+
+/* -----------------------------------------------------------------------  LOGIN ------------------------------------------------------------ */
+.centeredlogin {
+	position: fixed;
+	left: 38%;
+	top:40%;
+	width: 300px;
+	height: 135px;
+}
+
+.centeredlogin label,.centeredlogin .property-label {
+	color: #666666;
+	text-align: left;
+	font-weight: bold;
+	padding-right: 1%;
+	padding-top: 4%;
+	padding-bottom: 4%;
+}
+
+.centeredlogin button {
+	left: 45%;
+	width: 100px;
+}
+
+/* -----------------------------------------------------------------------  DISPOSICION ------------------------------------------------------------ */
+.contenedor_ppal {
+	position: absolute;
+	background: url(../images/body-bg.png) repeat-x top left #fff;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+	overflow: hidden;
+}
+
+.contenedor_header {
+	height: 100px;
+	max-height: 100px;
+	overflow: hidden;
+	background: url(../images/header.jpg) repeat-x top left #fff;
+	background-color: #336699;
+	position: relative;
+}
+
+.logoHeader {
+	height: 100px;
+	width: 100%;
+	max-height: 100px;
+	overflow: hidden;
+	margin-top: 5px;
+	margin-left: 10px;
+	background: url(../images/logo_sl.png) no-repeat top left 17px;
+	position: relative;
+}
+
+.contenedor_workbench {
+	position: absolute;
+	top: 105px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	overflow: auto;
+}
+
+.contenedor_content {
+	position: absolute;
+	left: 20px;
+	right:20px;
+	top: 0px;
+}
+
+.content {
+	margin-top: 45px;
+}
+
+
+/* ------------------------------------------------------------ GENERAL ------------------------------------------------------------ */
+.floatright {
+	float: right;
+}
+
+.font16 {
+	font-size: 16px;
+}
+
+.width350 {
+	width: 350px;
+}
+
+.width170 {
+	width: 170px;
+}
+
+.width150 {
+	width: 150px;
+}
+
+.width100 {
+	width: 100px;
+}
+
+.width50 {
+	width: 50px;
+}
+
+.width35 {
+	width: 35px;
+}
+
+.mtop75 {
+	margin-top: 75px;
+}
+
+.mtop20 {
+	margin-top: 20px;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+.spinner {
+	background: url(../images/spinner.gif) 50% 50% no-repeat transparent;
+	height: 16px;
+	width: 16px;
+	padding: 0.5em;
+	position: absolute;
+	right: 0;
+	top: 0;
+	text-indent: -9999px;
+}
+
+.contenedor_content h2 {
+	margin: 0.8em 1em 0.3em;
+}
+
+/* ------------------------------------------------------------ HORIZONTAL NAVIGATION  ------------------------------------------------------------ */
+.nav {
+	/*position:absolute;
+	right:30px;
+	top: 0px;*/
+	float: right;
+	/*padding: 0.5em 0.75em;
+	/*background-color: #efefef;	
+	-moz-box-shadow: 0 0 3px 1px #aaaaaa;
+	-webkit-box-shadow: 0 0 3px 1px #aaaaaa;
+	box-shadow: 0 0 3px 1px #aaaaaa;*/
+	zoom: 1;
+}
+
+table .nav {
+	float: none;
+	padding: 0 0;
+}
+
+.nav ul {
+	overflow: hidden;
+	padding-left: 0;
+	zoom: 1;
+}
+
+.nav li {
+	display: block;
+	float: left;
+	list-style-type: none;
+	margin-right: 0.5em;
+	padding: 0;
+}
+
+.nav li.separator {
+	background: url(../images/separator24.png) no-repeat top left
+		transparent;
+	width: 7px;
+	height: 24px;
+	background-position-y: 1px;
+	margin-right: 8px
+}
+
+.nav input,.nav button {
+	background-color: transparent;
+	border: 0;
+	color: #666666;
+	cursor: pointer;
+	display: block;
+	overflow: visible;
+	padding: 0.25em 0.7em;
+	text-decoration: none;
+	-moz-border-radius: 0.3em;
+	-webkit-border-radius: 0.3em;
+	border-radius: 0.3em;
+	height: 100%;
+	min-height: 27px;
+}
+
+.nav a {
+	color: #666666;
+	display: block;
+	padding: 0.25em 0.7em;
+	text-decoration: none;
+	-moz-border-radius: 0.3em;
+	-webkit-border-radius: 0.3em;
+	border-radius: 0.3em;
+}
+
+.nav a:active,.nav a:visited {
+	color: #666666;
+}
+
+.nav a:focus,.nav a:hover {
+	background-color: #999999;
+	color: #ffffff;
+	outline: none;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+}
+
+.no-borderradius .nav a:focus,.no-borderradius .nav a:hover {
+	background-color: transparent;
+	color: #444444;
+	text-decoration: underline;
+}
+
+/* ------------------------------------------------------------ CREATE/EDIT FORMS AND SHOW PAGES ------------------------------------------------------------ */
+fieldset,.property-list {
+	margin: 0.6em 1.25em 0 1.25em;
+	padding: 0.3em 1.8em 1.25em;
+	position: relative;
+	zoom: 1;
+	border: none;
+}
+
+.property-list {
+	width: 500px;
+}
+
+.property-list .fieldcontain {
+	list-style: none;
+	/*	overflow: hidden;*/
+	zoom: 1;
+}
+
+.fieldcontain {
+	margin-top: 1em;
+}
+
+.fieldcontain label,.fieldcontain .property-label {
+	color: #666666;
+	text-align: left;
+	font-weight: bold;
+	padding-right: 1%;
+}
+
+.fieldcontain textarea {
+	height: 5%;
+}
+
+.fieldcontain .property-label {
+	float: left;
+}
+
+.fieldcontain .property-value {
+	display: block;
+	margin-left: 21%;
+}
+.fieldcontain .ui-selectmanymenu{
+	width: 40%;
+}
+
+.ui-selectonemenu-panel .ui-selectonemenu-filter{
+	width: inherit;
+}
+
+.ui-chkbox ui-widget{
+	padding-right: 3px;
+}
+
+label {
+	cursor: pointer;
+	display: inline-block;
+	margin: 0 0.25em 0 0;
+}
+
+input,select,textarea {
+	background-color: #fcfcfc;
+	border: 1px solid #cccccc;
+	font-size: 1em;
+	padding: 0.2em 0.4em;
+}
+
+select {
+	width: 150px;
+	padding: 0.2em 0.2em 0.2em 0;
+}
+
+select[multiple] {
+	vertical-align: top;
+}
+
+textarea {
+	width: 250px;
+	height: 150px;
+	overflow: auto; /* IE always renders vertical scrollbar without this */
+	vertical-align: top;
+}
+
+input[type=checkbox],input[type=radio] {
+	background-color: transparent;
+	border: 0;
+	padding: 0;
+}
+
+input:focus,select:focus,textarea:focus {
+	background-color: #ffffff;
+	border: 1px solid #eeeeee;
+	outline: 0;
+	-moz-box-shadow: 0 0 0.5em #ffffff;
+	-webkit-box-shadow: 0 0 0.5em #ffffff;
+	box-shadow: 0 0 0.5em #ffffff;
+}
+
+.required-indicator {
+	color: #48802C;
+	display: inline-block;
+	font-weight: bold;
+	margin-left: 0.3em;
+	position: relative;
+	top: 0.1em;
+}
+
+ul.one-to-many {
+	display: inline-block;
+	list-style-position: inside;
+	vertical-align: top;
+}
+
+.ie6 ul.one-to-many,.ie7 ul.one-to-many {
+	display: inline;
+	zoom: 1;
+}
+
+ul.one-to-many li.add {
+	list-style-type: none;
+}
+
+/* EMBEDDED PROPERTIES */
+fieldset.embedded {
+	background-color: transparent;
+	border: 1px solid #CCCCCC;
+	margin-left: 0;
+	margin-right: 0;
+	padding-left: 0;
+	padding-right: 0;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+fieldset.embedded legend {
+	margin: 0 1em;
+}
+
+/* ------------------------------------------------------------ MESSAGES AND ERRORS ------------------------------------------------------------ */
+.errors,.message {
+	font-size: 0.8em;
+	line-height: 2;
+	margin: 1em 2em;
+	padding: 0.25em;
+}
+
+.message {
+	background: #f3f3ff;
+	border: 1px solid #b2d1ff;
+	color: #006dba;
+	-moz-box-shadow: 0 0 0.25em #b2d1ff;
+	-webkit-box-shadow: 0 0 0.25em #b2d1ff;
+	box-shadow: 0 0 0.25em #b2d1ff;
+}
+
+.errors {
+	background: #fff3f3;
+	border: 1px solid #ffaaaa;
+	color: #cc0000;
+	-moz-box-shadow: 0 0 0.25em #ff8888;
+	-webkit-box-shadow: 0 0 0.25em #ff8888;
+	box-shadow: 0 0 0.25em #ff8888;
+}
+
+.errors ul,.message {
+	padding: 0;
+}
+
+.errors li {
+	list-style: none;
+	background: transparent url(../images/skin/exclamation.png) 0.5em 50%
+		no-repeat;
+	text-indent: 2.2em;
+}
+
+.message {
+	background: transparent url(../images/skin/information.png) 0.5em 50%
+		no-repeat;
+	text-indent: 2.2em;
+}
+
+/* form fields with errors */
+.error input,.error select,.error textarea {
+	background: #fff3f3;
+	border-color: #ffaaaa;
+	color: #cc0000;
+}
+
+.error input:focus,.error select:focus,.error textarea:focus {
+	-moz-box-shadow: 0 0 0.5em #ffaaaa;
+	-webkit-box-shadow: 0 0 0.5em #ffaaaa;
+	box-shadow: 0 0 0.5em #ffaaaa;
+}
+
+/* same effects for browsers that support HTML5 client-side validation (these have to be specified separately or IE will ignore the entire rule) */
+input:invalid,select:invalid,textarea:invalid {
+	
+}
+
+input:invalid:focus,select:invalid:focus,textarea:invalid:focus {
+	
+}
+
+
+/* ------------------------------------------------------------ ACTION BUTTONS ------------------------------------------------------------  */
+.buttons {
+	background-color: #efefef;
+	overflow: hidden;
+	padding: 0.3em;
+	-moz-box-shadow: 0 0 3px 1px #aaaaaa;
+	-webkit-box-shadow: 0 0 3px 1px #aaaaaa;
+	box-shadow: 0 0 3px 1px #aaaaaa;
+	margin: 1.5em 0 0 0;
+	border: none;
+	margin-left: 10px;
+	margin-right: 10px;
+	/* 	float:left; */
+}
+
+.nomargin {
+	margin: 0;
+}
+
+.mleft10 {
+	margin-left: 10px;
+}
+
+.nofloat {
+	float: none;
+}
+
+.buttons input,.buttons a {
+	background-color: transparent;
+	border: 0;
+	color: #666666;
+	cursor: pointer;
+	display: inline-block;
+	margin: 0 0.25em 0;
+	overflow: visible;
+	padding: 0.25em 0.7em;
+	text-decoration: none;
+	-moz-border-radius: 0.3em;
+	-webkit-border-radius: 0.3em;
+	border-radius: 0.3em;
+}
+
+.buttons input:hover,.buttons input:focus,.buttons a:hover,.buttons a:focus,.nav input:hover,.nav input:focus,.nav button:hover,.nav button:focus
+	{
+	background-color: #999999;
+	color: #ffffff;
+	outline: none;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.no-borderradius .buttons input:hover,.no-borderradius .buttons input:focus,.no-borderradius .buttons a:hover,.no-borderradius .buttons a:focus,.no-borderradius .nav input:hover,.no-borderradius .nav input:focus,.no-borderradius .nav button:hover,.no-borderradius .nav button:focus
+	{
+	background-color: transparent;
+	color: #444444;
+	text-decoration: underline;
+}
+
+.buttons .delete,.buttons .edit,.buttons .save,.buttons .excel,.nav .edit,.nav .delete,.nav .save,.nav .excel,.nav .email,.nav .calendar,.nav .perfil,.nav .logout,.buttons .create,.nav .create,.buttons.home,.nav .home,.buttons.list,.nav .list
+	{
+	background-position: 0.7em center;
+	background-repeat: no-repeat;
+	text-indent: 25px;
+	font-weight: bold;
+}
+
+.ie6 .buttons input.delete,.ie6 .buttons input.edit,.ie6 .buttons input.save,.ie6 .buttons input.excel,.ie6 .buttons input.email,.ie6 .buttons input.calendar,.ie6 .buttons input.perfil,.ie6 .buttons input.logout,.ie6 .buttons input.home,.ie6 .buttons input.list,.ie6 .buttons input.create
+.ie7 .buttons input.delete,.ie7 .buttons input.edit,.ie7 .buttons input.save,.ie7 .buttons input.excel,.ie7 .buttons input.email,.ie7 .buttons input.calendar,.ie7 .buttons input.perfil,.ie7 .buttons input.logout,.ie7 .buttons input.home,.ie7 .buttons input.list,.ie7 .buttons input.create
+.ie6 .nav input.delete,.ie6 .nav input.edit,.ie6 .nav input.save,.ie6 .nav input.excel,.ie6 .nav input.email,.ie6 .nav input.calendar,.ie6 .nav input.perfil,.ie6 .nav input.logout,.ie6 .nav input.home,.ie6 .nav input.list,.ie6 .nav input.create
+.ie7 .nav input.delete,.ie7 .nav input.edit,.ie7 .nav input.save,.ie7 .nav input.excel,.ie7 .nav input.email,.ie7 .nav input.calendar,.ie7 .nav input.perfil,.ie7 .nav input.logout,.ie7 .nav input.home,.ie7 .nav input.list,.ie7 .nav input.create
+	{
+	padding-left: 36px;
+}
+
+.nav a.home,.nav button.home {
+	background-image: url(../images/skin/house.png);
+}
+
+.nav a.list,.nav button.list {
+	background-image: url(../images/skin/database_table.png);
+}
+
+.nav a.create,.nav button.create {
+	background-image: url(../images/skin/database_add.png);
+}
+
+.buttons .delete,.nav .delete {
+	background-image: url(../images/skin/database_delete.png);
+}
+
+.buttons .excel,.nav .calendar {
+	background-image: url(../images/skin/calendar.png);
+}
+
+.buttons .edit,.nav .edit {
+	background-image: url(../images/skin/database_edit.png);
+}
+
+.buttons .save,.nav .save {
+	background-image: url(../images/skin/database_save.png);
+}
+
+.buttons .save,.nav .refresh {
+	background-image: url(../images/skin/refresh.png);
+}
+
+a.skip {
+	position: absolute;
+	left: -9999px;
+}
+
+.linkButton {
+	float: right;
+	padding: 11px 25px;
+	font-family: 'Bree Serif', serif;
+	font-weight: 300;
+	font-size: 18px;
+	color: #fff;
+	text-shadow: 0px 1px 0 rgba(0, 0, 0, 0.25);
+	background: #56c2e1;
+	border: 1px solid #46b3d3;
+	border-radius: 5px;
+	cursor: pointer;
+	box-shadow: inset 0 0 2px rgba(256, 256, 256, 0.75);
+	-moz-box-shadow: inset 0 0 2px rgba(256, 256, 256, 0.75);
+	-webkit-box-shadow: inset 0 0 2px rgba(256, 256, 256, 0.75);
+	display: inline;
+}
+
+.o-panel {
+	bottom: 5px;
+	position: absolute;
+	right: 0px;
+}
+
+.radiosave {
+	border-radius: 10px;
+	float: right;
+}
+
+
+/* ------------------------------------------------------------ TABLA ------------------------------------------------------------  */
+.tableColumnStyle {
+	text-align: center !important;
+	text-shadow: none;
+}
+
+#contenedorDatos{
+	margin-top: 40px;
+}
