@@ -13,8 +13,3 @@ persistirDatosSeriales.py is a simple Python program that takes the serial outpu
 speed measured, using the PySerial library and PostgreSQL. On the other hand, LaboratorioProyecto is a JavaEE proyect that
 uses JSF and Primefaces to display the values obtained with a p:LinearChart.
 
-Best Wishes, 
-
-XOXO
-
-Alfredito
